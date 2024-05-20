@@ -40,7 +40,7 @@ def findLongestPalindrome(string):
             ii=1
             while i-ii >= 0 and i+ii+1 < len(string) and string[i-ii] == string [i+1+ii]:
                 ii=ii+1
-                if longestii < ii:
+                if longestii <= ii:
                     longestii = ii
                     longestPalindrome=string[(i-ii)+1:i+ii+1]
     return longestPalindrome
