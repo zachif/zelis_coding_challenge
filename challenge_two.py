@@ -40,7 +40,7 @@ def findLongestPalindrome(string):
             ii=1
             while i-ii >= 0 and i+ii+1 < len(string) and string[i-ii] == string [i+1+ii]:
                 ii=ii+1
-                if longestii <= ii:
+                if longestii <= ii:#I intially forgot the equals sign on line 44. its important because a palindrom with an even number of characters will will be longer than a palindrom with an odd number of characeters and the same "ii" value
                     longestii = ii
                     longestPalindrome=string[(i-ii)+1:i+ii+1]
     return longestPalindrome
